@@ -9,6 +9,14 @@
         "type": "git",
         "url": "git+https://github.com/anmolbansal7/cristatus.git"
     },
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        },
+        "./utils": "./dist/esm/utils/index.js",
+        "./components": "./dist/esm/components/index.js"
+    },
     "scripts": {
         "dev": "cd ./cristatus-app && pnpm run start",
         "build": "yarn build:esm && yarn build:cjs",

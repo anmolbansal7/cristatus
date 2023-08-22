@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@cristatus/components': file:../
+  '@cristatus/utils': file:../
   react: ^18.2.0
   react-dom: ^18.2.0
   react-scripts: 5.0.1
@@ -9,6 +10,7 @@ specifiers:
 
 dependencies:
   '@cristatus/components': file:.._react@18.2.0
+  '@cristatus/utils': file:.._react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
