@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Body from './components/Body';
 
-import styles from './styles.module.css';
+import Body from './components/Body';
 import Navbar from './components/Navbar';
+import styles from './styles.module.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);

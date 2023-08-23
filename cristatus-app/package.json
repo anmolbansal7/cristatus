@@ -8,6 +8,14 @@
         "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
         "stylelint": "stylelint \"**/*.css\""
     },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "pnpm run eslint"
+        ],
+        "*.{css,scss}": [
+            "pnpm run stylelint"
+        ]
+    },
     "dependencies": {
         "@cristatus/components": "file:../",
         "@cristatus/utils": "file:../",

@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+
 import NAVIGATION_MAPPING from '../../config';
+
 import styles from './styles.module.css';
 
 function Navbar({ activeTab, setActiveTab }) {
   const [searchValue, setSearchValue] = useState('');
 
+  // move this function to a custom function
   const FILTERED_NAVIGATION_MAPPING = NAVIGATION_MAPPING.reduce((filtered, section) => {
     if (section.type === 'top') {
       filtered.push(section);
@@ -44,8 +47,8 @@ function Navbar({ activeTab, setActiveTab }) {
 
       <div className={styles.navbar_items}>
 
-        {FILTERED_NAVIGATION_MAPPING.map((section) => (
-          <div key={section.type}>
+        {FILTERED_NAVIGATION_MAPPING.map((section, index) => (
+          <div key={index}>
             {section.type === 'component' || section.type === 'utils' ? (
               <div className={styles.subheading}>{section.label}</div>
             ) : null}
