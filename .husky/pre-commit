@@ -1,7 +1,13 @@
-# .husky/pre-commit
+#!/bin/bash
 
-# Run linting and tests in main package
-(pnpm run lint-package)
+# Run linting and tests in the main package
+if ! pnpm run test-package; then
+  echo "Linting and tests in the main package failed. Aborting commit."
+  exit 1
+fi
 
-# Run linting in documentation directory
-(cd documentation && pnpm run lint-fix)
+# Run linting in the documentation directory
+if ! (cd documentation && pnpm run lint-fix); then
+  echo "Linting in the documentation directory failed. Aborting commit."
+  exit 1
+fi
