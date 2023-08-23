@@ -1,6 +1,16 @@
 # Cristatus
 
 
+### Steps to Run
+
+- clone the repo
+- ```pnpm run install-package``` (to install npm package deps)
+- ```pnpm run lint-package``` (for eslint and stylelint in package)
+- ```pnpm run test-package``` (for tests, eslint and stylelint in package)
+- ```pnpm run test``` (for tests in package)
+- ```pnpm run install-docs``` (to install deps for documentation website)
+- ```pnpm run start-docs``` (to start localhost:3000 for documentation website)
+
 ### Utils
 
 Status - Todo, In Progress, Testing, Done, Published
