@@ -41,6 +41,7 @@ Status - Todo, In Progress, Testing, Done, Published
 | startOfMonth | Return the start of a month for the given date. | @ | Todo |
 | startOfWeek | Return the start of a week for the given date. | @ | Todo |
 | subtractDays | Subtract the specified number of days from the given date. | @ | Todo |
+|  | Remove Spaces from a String and replace with something | @ | Todo |
 | - | - | @ | Todo |
 | - | - | @ | Todo |
 
