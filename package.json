@@ -1,7 +1,7 @@
 {
     "name": "cristatus",
     "version": "0.1.0",
-    "description": "My first react typescript package",
+    "description": "NPM Package for Everything React",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "types": "./dist/esm/index.d.ts",
@@ -18,15 +18,14 @@
         "./components": "./dist/esm/components/index.js"
     },
     "scripts": {
-        "dev": "cd ./cristatus-app && pnpm run start",
-        "build": "yarn build:esm && yarn build:cjs",
+        "build": "pnpm build:esm && pnpm build:cjs",
         "build:esm": "tsc",
         "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-        "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-        "stylelint": "stylelint \"**/*.css\"",
-        "test": "jest --config jest.config.js",
-        "prepare": "npm run build",
-        "prepublishOnly": "npm test && npm run eslint"
+        "start-docs": "pnpm run build && cd documentation && pnpm run start",
+        "lint-docs": "cd documentation && pnpm run lint-fix",
+        "lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\" && stylelint \"src/**/*.css\"",
+        "test-package": "pnpm run test && pnpm run lint-package",
+        "test": "jest --config jest.config.js"
     },
     "peerDependencies": {
         "react": ">=16"

@@ -1,12 +1,13 @@
 {
-    "name": "cristatus-app",
+    "name": "documentation",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-        "stylelint": "stylelint \"**/*.css\""
+        "stylelint": "stylelint \"**/*.css\"",
+        "lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\""
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [

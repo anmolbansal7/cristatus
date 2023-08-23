@@ -1,5 +1,7 @@
 import { Element } from 'react-scroll';
+
 import NAVIGATION_MAPPING from '../../config';
+
 import styles from './styles.module.css';
 
 function Body() {
