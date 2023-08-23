@@ -1,6 +1,17 @@
 # Cristatus
 
 
+### Steps to Run
+
+- clone the repo
+- ```pnpm run install-package``` (to install npm package deps)
+- ```pnpm run lint-package``` (for eslint and stylelint in package)
+- ```pnpm run test-package``` (for tests, eslint and stylelint in package)
+- ```pnpm run test``` (for tests in package)
+- ```pnpm run build``` (to build npm package)
+- ```pnpm run install-docs``` (to install deps for documentation website)
+- ```pnpm run start-docs``` (to start localhost:3000 for documentation website)
+
 ### Utils
 
 Status - Todo, In Progress, Testing, Done, Published
@@ -41,6 +52,7 @@ Status - Todo, In Progress, Testing, Done, Published
 | startOfMonth | Return the start of a month for the given date. | @ | Todo |
 | startOfWeek | Return the start of a week for the given date. | @ | Todo |
 | subtractDays | Subtract the specified number of days from the given date. | @ | Todo |
+|  | Remove Spaces from a String and replace with something | @ | Todo |
 | - | - | @ | Todo |
 | - | - | @ | Todo |
 
