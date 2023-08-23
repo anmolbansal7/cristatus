@@ -8,6 +8,7 @@
 - ```pnpm run lint-package``` (for eslint and stylelint in package)
 - ```pnpm run test-package``` (for tests, eslint and stylelint in package)
 - ```pnpm run test``` (for tests in package)
+- ```pnpm run build``` (to build npm package)
 - ```pnpm run install-docs``` (to install deps for documentation website)
 - ```pnpm run start-docs``` (to start localhost:3000 for documentation website)
 
