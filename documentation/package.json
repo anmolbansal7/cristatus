@@ -5,8 +5,6 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-        "stylelint": "stylelint \"**/*.css\"",
         "lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\""
     },
     "lint-staged": {
