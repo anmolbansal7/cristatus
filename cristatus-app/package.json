@@ -2,17 +2,32 @@
     "name": "cristatus-app",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eslint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+        "stylelint": "stylelint \"**/*.css\""
+    },
     "dependencies": {
+        "@cristatus/components": "file:../",
+        "@cristatus/utils": "file:../",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
-        "web-vitals": "^2.1.4",
-        "@cristatus/components": "file:../",
-        "@cristatus/utils": "file:../"
+        "react-scroll": "^1.8.9",
+        "web-vitals": "^2.1.4"
     },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build"
+    "devDependencies": {
+        "eslint": "8.47.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-react": "^7.33.2",
+        "stylelint": "^15.10.2",
+        "stylelint-config-css-modules": "^4.3.0",
+        "stylelint-config-recommended": "^13.0.0",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-scss": "^5.1.0"
     },
     "browserslist": {
         "production": [

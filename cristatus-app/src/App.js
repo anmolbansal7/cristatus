@@ -1,17 +1,16 @@
-import { Toast } from '@cristatus/components';
+import React, { useState } from 'react';
+import Body from './components/Body';
 
-import { isEmpty } from '@cristatus/utils';
+import styles from './styles.module.css';
+import Navbar from './components/Navbar';
 
 function App() {
-  const testVar = null;
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
-    <div>
-      <header>
-        <p>
-          <Toast />
-          {isEmpty(testVar) ? ('True') : ('False')}
-        </p>
-      </header>
+    <div className={styles.body_container}>
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Body />
     </div>
   );
 }
