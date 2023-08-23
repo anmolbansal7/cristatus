@@ -48,6 +48,7 @@ function Navbar({ activeTab, setActiveTab }) {
       <div className={styles.navbar_items}>
 
         {FILTERED_NAVIGATION_MAPPING.map((section, index) => (
+          // here is a lint error
           <div key={index}>
             {section.type === 'component' || section.type === 'utils' ? (
               <div className={styles.subheading}>{section.label}</div>

@@ -34,7 +34,13 @@
         "stylelint-config-css-modules": "^4.3.0",
         "stylelint-config-recommended": "^13.0.0",
         "stylelint-config-standard": "^34.0.0",
-        "stylelint-scss": "^5.1.0"
+        "stylelint-scss": "^5.1.0",
+        "husky": "^8.0.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pnpm run lint-fix"
+        }
     },
     "browserslist": {
         "production": [

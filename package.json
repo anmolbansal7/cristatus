@@ -22,7 +22,9 @@
         "build:esm": "tsc",
         "build:cjs": "tsc --module commonjs --outDir dist/cjs",
         "start-docs": "pnpm run build && cd documentation && pnpm run start",
+        "install-docs": "cd documentation && pnpm i",
         "lint-docs": "cd documentation && pnpm run lint-fix",
+        "install-package": "pnpm i",
         "lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\" && stylelint \"src/**/*.css\"",
         "test-package": "pnpm run test && pnpm run lint-package",
         "test": "jest --config jest.config.js"
@@ -58,6 +60,12 @@
         "stylelint-config-recommended": "^13.0.0",
         "ts-jest": "^29.1.1",
         "typescript": "^5.1.6",
-        "tslib": "^2.6.1"
+        "tslib": "^2.6.1",
+        "husky": "^8.0.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pnpm run test-package"
+        }
     }
 }
