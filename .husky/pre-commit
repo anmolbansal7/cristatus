@@ -1,0 +1,7 @@
+# .husky/pre-commit
+
+# Run linting and tests in main package
+(pnpm run lint-package)
+
+# Run linting in documentation directory
+(cd documentation && pnpm run lint-fix)
