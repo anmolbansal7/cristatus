@@ -32,7 +32,7 @@ function CopyToClipboard({ textToCopy = '' }) {
         </>
       ) : (
         <>
-          <IoCopyOutline size={18} style={{ marginRight: '4px' }} />
+          <IoCopyOutline size={16} style={{ marginRight: '4px' }} />
           {' '}
           Copy
         </>

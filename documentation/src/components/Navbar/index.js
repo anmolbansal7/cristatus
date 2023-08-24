@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
+import { PiBirdBold } from 'react-icons/pi';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
@@ -15,9 +17,21 @@ function Navbar({ activeTab, setActiveTab }) {
   return (
     <div className={styles.navbar}>
       <div className={styles.navbar_top}>
-        <div className={styles.logo}>
-          <img src={GLOBALS.images.cristatus_logo} width={20} height={20} alt="logo" />
-          cristatus
+
+        <div className={styles.header}>
+          <div className={styles.logo}>
+            <PiBirdBold size={28} style={{ marginRight: '4px' }} />
+            cristatus
+          </div>
+
+          <div className={styles.links}>
+            <a className={styles.anchor_icon} href={GLOBALS.links.github}>
+              <IoLogoGithub size={28} />
+            </a>
+            <a className={styles.anchor_icon} href={GLOBALS.links.npm}>
+              <IoLogoNpm size={28} />
+            </a>
+          </div>
         </div>
 
         <input
@@ -39,12 +53,11 @@ function Navbar({ activeTab, setActiveTab }) {
             {section.items.map((item) => (
               <Link
                 key={item.key}
-                to={`content-${item.key}`}
+                to={item.key}
                 spy
                 smooth
                 offset={-100}
                 duration={500}
-                spyThrottle={400}
                 onSetActive={() => setActiveTab(item.key)}
               >
                 <div

@@ -1,10 +1,12 @@
 .navbar {
-    background-color: var(--bg-grey);
-    width: 20vw;
+    background-color: var(--light);
+    width: 22vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: fixed;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 .navbar_top {
@@ -14,22 +16,38 @@
     padding: 24px 20px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 .logo {
     display: flex;
     align-items: center;
-    font-weight: 600;
-    font-size: 20px;
-
-    & img {
-        margin-right: 8px;
-    }
 }
 
+.links {
+    display: flex;
+}
+
+.anchor_icon {
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .search {
-    border: 1px solid #ccc;
-    box-shadow: inset 0px 0px 2px 0px rgba(180, 179, 179, 0.5);
+    border: 1px solid var(--dark);
+    box-shadow: inset 0px 0px 2px 0px var(--dark);
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 8px;
     width: 100%;
     outline: none;
 }
@@ -44,7 +62,7 @@
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
-    color: var(--grey);
+    color: var(--darker);
     padding: 0px 24px;
     margin-top: 16px;
     margin-bottom: 4px;
@@ -58,7 +76,7 @@
 }
 
 .item:hover {
-    background-color: var(--light-grey);
+    background-color: var(--medium);
     color: var(--blue);
 }
 
@@ -67,6 +85,6 @@
     font-weight: 400;
     padding: 8px 24px;
     cursor: pointer;
-    background-color: var(--light-grey);
+    background-color: var(--medium);
     color: var(--blue);
 }

@@ -18,7 +18,7 @@ function Body() {
             return (
               <Element
                 key={item.key}
-                name={`content-${item.key}`}
+                name={item.key}
                 className={styles.body_item}
               >
                 <Component label={item.label} description={item.description} code={item.code} />
@@ -27,8 +27,6 @@ function Body() {
           })}
         </div>
       ))}
-
-      <div className={styles.body_footer}> Some Footer Content Here</div>
     </div>
   );
 }

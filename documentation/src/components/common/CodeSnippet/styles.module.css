@@ -2,11 +2,8 @@
     border-radius: 8px;
     overflow: hidden;
     margin: 16px 0px;
-    background-color: var(--medium-grey);
 
     & pre {
-        background: var(--light-black) !important;
-
         & code,
         & span {
             font-weight: 400 !important;
@@ -17,10 +14,12 @@
 }
 
 .code_header {
-    padding: 4px 8px;
+    padding: 8px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     height: 32px;
+    background-color: var(--black);
+    color: var(--dark-white);
 }

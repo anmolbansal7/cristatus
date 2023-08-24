@@ -1,6 +1,10 @@
 const GLOBALS = {
   images: {
-    cristatus_logo: './github.svg',
+    cristatus_logo: './logo.png',
+  },
+  links: {
+    github: '',
+    npm: '',
   },
 };
 

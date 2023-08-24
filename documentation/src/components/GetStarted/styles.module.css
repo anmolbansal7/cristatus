@@ -1,3 +1,25 @@
-.get_started {
-    color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 4px 0px;
+}
+
+p {
+    padding: 8px 0px;
+}
+
+ul {
+    padding: 4px 0px;
+}
+
+li {
+    padding: 4px 0px;
+    margin-left: 14px;
+}
+
+.anchor {
+    color: var(--blue);
 }
