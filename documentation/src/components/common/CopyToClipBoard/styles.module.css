@@ -1,10 +1,10 @@
 .copy_button {
-    border: none;
-    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     font-size: 12px;
     color: var(--dark-white);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }

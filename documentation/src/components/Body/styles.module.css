@@ -4,8 +4,8 @@
 }
 
 .body_item {
-    padding: 24px 32px;
-    margin-top: 16px;
     border: 1px solid var(--medium);
     border-radius: 12px;
+    padding: 24px 32px;
+    margin-top: 16px;
 }
