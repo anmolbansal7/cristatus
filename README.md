@@ -53,6 +53,7 @@ Status - Todo, In Progress, Testing, Done, Published
 | startOfWeek | Return the start of a week for the given date. | @ | Todo |
 | subtractDays | Subtract the specified number of days from the given date. | @ | Todo |
 |  | Remove Spaces from a String and replace with something | @ | Todo |
+| debounceQuery | Sets a delay on searchbar, specifically to reduce unwanted computation. | @ | Todo |
 | - | - | @ | Todo |
 | - | - | @ | Todo |
 
