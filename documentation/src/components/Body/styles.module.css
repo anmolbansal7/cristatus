@@ -4,9 +4,14 @@
     margin-left: 20vw;
 }
 
+.body_item {
+    padding: 24px 32px;
+    margin-top: 24px;
+    border: 1px solid;
+}
+
 .body_footer {
     height: 100px;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;

@@ -1,22 +1,27 @@
 import { Element } from 'react-scroll';
 
-import NAVIGATION_MAPPING from '../../config';
+import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
+import EmptyState from '../common/EmptyState';
 
 import styles from './styles.module.css';
 
 function Body() {
   return (
     <div className={styles.body}>
+
       {NAVIGATION_MAPPING.map((section) => (
+
         <div key={section.type}>
           {section.items.map((item) => {
-            const Component = item.component;
+            const Component = item.component || EmptyState;
+
             return (
               <Element
-                name={`content-${item.key}`}
                 key={item.key}
+                name={`content-${item.key}`}
+                className={styles.body_item}
               >
-                <Component label={item.label} />
+                <Component label={item.label} description={item.description} code={item.code} />
               </Element>
             );
           })}

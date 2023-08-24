@@ -1,39 +1,22 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
-import NAVIGATION_MAPPING from '../../config';
+import getFilteredNavigation from '../../utils/getFilteredNavigation';
+import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
+import GLOBALS from '../../globals/globals';
 
 import styles from './styles.module.css';
 
 function Navbar({ activeTab, setActiveTab }) {
   const [searchValue, setSearchValue] = useState('');
 
-  // move this function to a custom function
-  const FILTERED_NAVIGATION_MAPPING = NAVIGATION_MAPPING.reduce((filtered, section) => {
-    if (section.type === 'top') {
-      filtered.push(section);
-      return filtered;
-    }
-
-    const filteredSectionItems = section.items.filter(
-      (item) => item.label.toLowerCase().includes(searchValue.toLowerCase()),
-    );
-
-    if (filteredSectionItems.length > 0) {
-      filtered.push({
-        ...section,
-        items: filteredSectionItems,
-      });
-    }
-
-    return filtered;
-  }, []);
+  const FILTERED_NAVIGATION_MAPPING = getFilteredNavigation({ NAVIGATION_MAPPING, searchValue });
 
   return (
     <div className={styles.navbar}>
       <div className={styles.navbar_top}>
         <div className={styles.logo}>
-          <img src="./github.svg" width={20} height={20} alt="logo" />
+          <img src={GLOBALS.images.cristatus_logo} width={20} height={20} alt="logo" />
           cristatus
         </div>
 
@@ -47,7 +30,7 @@ function Navbar({ activeTab, setActiveTab }) {
 
       <div className={styles.navbar_items}>
 
-        {FILTERED_NAVIGATION_MAPPING.map((section) => (
+        {(FILTERED_NAVIGATION_MAPPING || []).map((section) => (
           <div key={section.type}>
             {section.type === 'component' || section.type === 'utils' ? (
               <div className={styles.subheading}>{section.label}</div>
@@ -59,8 +42,9 @@ function Navbar({ activeTab, setActiveTab }) {
                 to={`content-${item.key}`}
                 spy
                 smooth
-                offset={-200}
+                offset={-100}
                 duration={500}
+                spyThrottle={400}
                 onSetActive={() => setActiveTab(item.key)}
               >
                 <div

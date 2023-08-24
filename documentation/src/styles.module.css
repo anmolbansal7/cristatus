@@ -13,11 +13,13 @@
     --medium-grey: #d6d8db;
     --dark-grey: #a0a8b3;
     --grey: #808080;
-    --light-back: #171f2a;
+    --light-black: #171f2a;
     --black: #000000;
     --blue: #417ee1;
 }
 
 .body_container {
     display: flex;
+    font-size: 14px;
+    line-height: 150%;
 }

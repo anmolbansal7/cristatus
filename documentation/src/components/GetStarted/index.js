@@ -1,9 +1,9 @@
 import styles from './styles.module.css';
 
-function GetStarted({ label = '' }) {
+function GetStarted() {
   return (
     <div className={styles.get_started}>
-      <h2>{label}</h2>
+      <h2>Get Started</h2>
     </div>
   );
 }
