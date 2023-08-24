@@ -19,21 +19,12 @@ import { isEmpty } from '@cristatus/utils';
 const isArrayEmpty = isEmpty([1, 2, 3]); // false
 `;
 
-// const COMPONENTS_CODE = `// Import from Cristatus Components
-// import { Button } from '@cristatus/components';
+const COMPONENTS_CODE = `// Import from Cristatus Components
+import { Button } from '@cristatus/components';
 
-// // Use the Button component
-// function App() {
-//   return <Button label="Click me" onClick={() => console.log('Button clicked')} />;
-// }`;
-
-const COMPONENTS_CODE = `ul {
-    padding: 4px 0px;
-}
-
-li {
-    padding: 4px 0px;
-    margin-left: 14px;
+// Use the Button component
+function App() {
+  return <Button label="Click me" onClick={() => console.log('Button clicked')} />;
 }`;
 
 function GetStarted() {
@@ -82,11 +73,11 @@ function GetStarted() {
 
       </p>
 
-      <CodeSnippet code={UTILS_CODE} showHeader={false} />
+      <CodeSnippet code={UTILS_CODE} showHeader={false} language="javascript" />
 
       <p>If you&apos;re interested in UI components, you can import and use them like this:</p>
 
-      <CodeSnippet code={COMPONENTS_CODE} showHeader={false} language="css" />
+      <CodeSnippet code={COMPONENTS_CODE} showHeader={false} language="javascript" />
 
       <h2>API Documentation</h2>
 

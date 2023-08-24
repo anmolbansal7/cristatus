@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 import CodeSnippet from '../common/CodeSnippet';
 
 import styles from './styles.module.css';
