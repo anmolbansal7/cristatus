@@ -1,13 +1,11 @@
 .body {
-    width: 80vw;
     padding: 24px 48px;
-    margin-left: 20vw;
+    margin-left: 22vw;
 }
 
-.body_footer {
-    height: 100px;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.body_item {
+    border: 1px solid var(--medium);
+    border-radius: 12px;
+    padding: 24px 32px;
+    margin-top: 16px;
 }

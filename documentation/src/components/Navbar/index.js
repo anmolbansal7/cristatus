@@ -1,40 +1,37 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
+import { PiBirdBold } from 'react-icons/pi';
 
-import NAVIGATION_MAPPING from '../../config';
+import getFilteredNavigation from '../../utils/getFilteredNavigation';
+import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
+import GLOBALS from '../../globals/globals';
 
 import styles from './styles.module.css';
 
 function Navbar({ activeTab, setActiveTab }) {
   const [searchValue, setSearchValue] = useState('');
 
-  // move this function to a custom function
-  const FILTERED_NAVIGATION_MAPPING = NAVIGATION_MAPPING.reduce((filtered, section) => {
-    if (section.type === 'top') {
-      filtered.push(section);
-      return filtered;
-    }
-
-    const filteredSectionItems = section.items.filter(
-      (item) => item.label.toLowerCase().includes(searchValue.toLowerCase()),
-    );
-
-    if (filteredSectionItems.length > 0) {
-      filtered.push({
-        ...section,
-        items: filteredSectionItems,
-      });
-    }
-
-    return filtered;
-  }, []);
+  const FILTERED_NAVIGATION_MAPPING = getFilteredNavigation({ NAVIGATION_MAPPING, searchValue });
 
   return (
     <div className={styles.navbar}>
       <div className={styles.navbar_top}>
-        <div className={styles.logo}>
-          <img src="./github.svg" width={20} height={20} alt="logo" />
-          cristatus
+
+        <div className={styles.header}>
+          <div className={styles.logo}>
+            <PiBirdBold size={28} style={{ marginRight: '4px' }} />
+            cristatus
+          </div>
+
+          <div className={styles.links}>
+            <a className={styles.anchor_icon} href={GLOBALS.links.github}>
+              <IoLogoGithub size={28} />
+            </a>
+            <a className={styles.anchor_icon} href={GLOBALS.links.npm}>
+              <IoLogoNpm size={28} />
+            </a>
+          </div>
         </div>
 
         <input
@@ -47,7 +44,7 @@ function Navbar({ activeTab, setActiveTab }) {
 
       <div className={styles.navbar_items}>
 
-        {FILTERED_NAVIGATION_MAPPING.map((section) => (
+        {(FILTERED_NAVIGATION_MAPPING || []).map((section) => (
           <div key={section.type}>
             {section.type === 'component' || section.type === 'utils' ? (
               <div className={styles.subheading}>{section.label}</div>
@@ -56,10 +53,10 @@ function Navbar({ activeTab, setActiveTab }) {
             {section.items.map((item) => (
               <Link
                 key={item.key}
-                to={`content-${item.key}`}
+                to={item.key}
                 spy
                 smooth
-                offset={-200}
+                offset={-100}
                 duration={500}
                 onSetActive={() => setActiveTab(item.key)}
               >
