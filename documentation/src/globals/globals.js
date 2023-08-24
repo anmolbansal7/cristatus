@@ -1,6 +1,6 @@
 const GLOBALS = {
   links: {
-    github: '',
+    github: 'https://github.com/anmolbansal7/cristatus',
     npm: '',
   },
 };

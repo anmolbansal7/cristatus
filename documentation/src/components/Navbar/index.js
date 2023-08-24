@@ -25,10 +25,10 @@ function Navbar({ activeTab, setActiveTab }) {
           </div>
 
           <div className={styles.links}>
-            <a className={styles.anchor_icon} href={GLOBALS.links.github}>
+            <a className={styles.anchor_icon} href={GLOBALS.links.github} target="_blank" rel="noreferrer">
               <IoLogoGithub size={28} />
             </a>
-            <a className={styles.anchor_icon} href={GLOBALS.links.npm}>
+            <a className={styles.anchor_icon} href={GLOBALS.links.npm} target="_blank" rel="noreferrer">
               <IoLogoNpm size={28} />
             </a>
           </div>
