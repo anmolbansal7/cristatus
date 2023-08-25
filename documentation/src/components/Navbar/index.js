@@ -1,19 +1,48 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
-import { isEmpty } from '@cristatus/utils';
+import { RiSettings4Line } from 'react-icons/ri';
+import { isEmpty, prefersDarkMode } from '@cristatus/utils';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
 import GLOBALS from '../../globals/globals';
 import TOP_NAVIGATION from '../../configurations/TOP_NAVIGATION';
+import Settings from '../Settings';
 
 import styles from './styles.module.css';
 
 function Navbar({ activeTab, setActiveTab }) {
+  const IS_DARK_MODE = prefersDarkMode();
+
   const [searchValue, setSearchValue] = useState('');
+  const [isRotated, setIsRotated] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [themeType, setThemeType] = useState('system');
+  const [theme, setTheme] = useState(IS_DARK_MODE ? 'dark' : 'light');
 
   const FILTERED_NAVIGATION_MAPPING = getFilteredNavigation({ NAVIGATION_MAPPING, searchValue });
+
+  useEffect(() => {
+    if (themeType === 'system') {
+      setTheme(IS_DARK_MODE ? 'dark' : 'light');
+    } else {
+      setTheme(themeType);
+    }
+
+    if (theme === 'dark') {
+      // eslint-disable-next-line no-undef
+      document.documentElement.classList.add('dark-theme');
+    } else {
+      // eslint-disable-next-line no-undef
+      document.documentElement.classList.remove('dark-theme');
+    }
+  }, [theme, themeType]);
+
+  const toggleRotation = () => {
+    setIsRotated(!isRotated);
+    setShowSettingsModal(!showSettingsModal);
+  };
 
   return (
     <div className={styles.navbar}>
@@ -26,14 +55,24 @@ function Navbar({ activeTab, setActiveTab }) {
           </a>
 
           <div className={styles.links}>
-            <a className={styles.anchor_icon} href={GLOBALS.links.github} target="_blank" rel="noreferrer">
-              <IoLogoGithub size={28} />
+            <a className={styles.anchor_icon} href={GLOBALS.links.github} target="_blank" rel="noreferrer" title="Go to Github">
+              <IoLogoGithub size={24} />
             </a>
-            <a className={styles.anchor_icon} href={GLOBALS.links.npm} target="_blank" rel="noreferrer">
-              <IoLogoNpm size={28} />
+            <a className={styles.anchor_icon} href={GLOBALS.links.npm} target="_blank" rel="noreferrer" title="Go to NPM">
+              <IoLogoNpm size={24} />
             </a>
+            <div className={styles.anchor_icon} title="Open Settings">
+              <RiSettings4Line size={24} className={isRotated ? styles.rotate : ''} onClick={toggleRotation} />
+            </div>
           </div>
         </div>
+
+        {showSettingsModal ? (
+          <Settings
+            themeType={themeType}
+            setThemeType={setThemeType}
+          />
+        ) : null}
 
         <input
           className={styles.search}

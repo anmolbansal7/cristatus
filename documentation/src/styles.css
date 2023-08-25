@@ -29,45 +29,55 @@
     --border: #ebebeb;
 
     /* None Changing CSS */
+    --small-text: 12px;
+    --medium-text: 14px;
+    --large-text: 16px;
     --small-border-radius: 4px;
     --medium-border-radius: 8px;
     --large-border-radius: 12px;
     --extra-large-border-radius: 24px;
+    --transition-duration: 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* black color for text */
-        --text: #ededed;
+.dark-theme {
+    /* black color for text */
+    --text: #ededed;
 
-        /* white color for background */
-        --background: #000000;
-        --secondary-background: #1a1a1a;
+    /* white color for background */
+    --background: #000000;
+    --secondary-background: #1a1a1a;
 
-        /* colors for attention */
-        --blue: #0072f5;
+    /* colors for attention */
+    --blue: #0072f5;
 
-        /* colors for contrast */
-        --light: #292929;
-        --medium: #8f8f8f;
-        --dark: #888888;
+    /* colors for contrast */
+    --light: #292929;
+    --medium: #8f8f8f;
+    --dark: #888888;
 
-        /* custom */
-        --code-header-text: #e6e6e6;
-        --code-header: #292929;
-        --border: #1f1f1f;
-    }
+    /* custom */
+    --code-header-text: #e6e6e6;
+    --code-header: #292929;
+    --border: #1f1f1f;
 }
 
 body {
     display: flex;
-    font-size: 14px;
+    font-size: var(--medium-text);
     font-weight: 400;
     line-height: 1.5;
     color: var(--text);
     background-color: var(--background);
     margin: 4vh 2vw 2vh 2vw;
 }
+
+body,
+button,
+input {
+    transition: background-color var(--transition-duration),
+        border var(--transition-duration);
+}
+
 p {
     line-height: 2;
 }

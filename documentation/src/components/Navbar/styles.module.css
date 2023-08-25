@@ -6,6 +6,7 @@
     background-color: var(--secondary-background);
     height: 94vh;
     border-radius: var(--large-border-radius);
+    transition: background-color var(--transition-duration);
 }
 
 .navbar_top {
@@ -50,6 +51,7 @@
     color: var(--text);
     text-decoration: none;
     margin-left: 8px;
+    cursor: pointer;
 }
 .search {
     width: 100%;
@@ -90,6 +92,7 @@
     margin: 0px 16px;
     padding: 8px 16px;
     cursor: pointer;
+    transition: background-color var(--transition-duration);
 }
 
 .item:hover {
@@ -106,6 +109,7 @@
     padding: 8px 16px;
     cursor: pointer;
     background-color: var(--light);
+    transition: background-color var(--transition-duration);
 }
 
 .empty_text {
@@ -115,4 +119,8 @@
 
 .anchor {
     color: var(--blue);
+}
+
+.rotate {
+    transform: rotate(45deg);
 }

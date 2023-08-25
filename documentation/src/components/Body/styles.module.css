@@ -1,6 +1,5 @@
 .body {
     margin-left: 22vw;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -17,4 +16,5 @@
     border: 2px solid var(--border);
     border-radius: var(--large-border-radius);
     padding: 24px 32px;
+    transition: border var(--transition-duration);
 }

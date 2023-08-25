@@ -23,6 +23,7 @@
     color: var(--code-header-text);
     padding: 8px 12px;
     background-color: var(--code-header);
+    transition: background-color var(--transition-duration);
 
     & p {
         padding: 0;
