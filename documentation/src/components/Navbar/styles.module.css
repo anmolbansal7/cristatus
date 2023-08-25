@@ -4,7 +4,7 @@
     flex-direction: column;
     width: 22vw;
     min-height: 100vh;
-    background-color: var(--light);
+    background-color: var(--dark-white);
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
 }
@@ -30,6 +30,12 @@
 .logo {
     display: flex;
     align-items: center;
+
+    & img {
+        width: 32px;
+        height: auto;
+        margin-right: 8px;
+    }
 }
 
 .links {
@@ -46,24 +52,30 @@
 }
 .search {
     width: 100%;
-    border: 1px solid var(--dark);
+    color: var(--black);
+    border: 1px solid var(--light);
     border-radius: 8px;
-    box-shadow: inset 0px 0px 2px 0px var(--dark);
+    box-shadow: inset 0px 0px 2px 0px var(--light);
     padding: 8px;
+    background-color: var(--light);
     outline: none;
+}
+::placeholder {
+    color: var(--medium);
 }
 
 .navbar_items {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    overflow-y: scroll;
 }
 
 .subheading {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--darker);
+    color: var(--primary);
     padding: 0px 24px;
     margin-top: 16px;
     margin-bottom: 4px;
@@ -77,7 +89,7 @@
 }
 
 .item:hover {
-    background-color: var(--medium);
+    background-color: var(--light);
     color: var(--blue);
 }
 
@@ -87,5 +99,5 @@
     color: var(--blue);
     padding: 8px 24px;
     cursor: pointer;
-    background-color: var(--medium);
+    background-color: var(--light);
 }

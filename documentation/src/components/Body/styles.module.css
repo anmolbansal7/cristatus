@@ -4,7 +4,7 @@
 }
 
 .body_item {
-    border: 1px solid var(--medium);
+    border: 2px solid var(--border);
     border-radius: 12px;
     padding: 24px 32px;
     margin-top: 16px;

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
-import { PiBirdBold } from 'react-icons/pi';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
@@ -20,7 +19,7 @@ function Navbar({ activeTab, setActiveTab }) {
 
         <div className={styles.header}>
           <div className={styles.logo}>
-            <PiBirdBold size={28} style={{ marginRight: '4px' }} />
+            <img src={GLOBALS.images.logo} alt="logo" />
             cristatus
           </div>
 

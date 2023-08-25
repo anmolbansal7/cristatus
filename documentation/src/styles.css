@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* black color for text */
+    --black: #171717;
+
+    /* white color for background */
+    --white: #ffffff;
+    --dark-white: #f2f2f2;
+
+    /* colors for attention */
+    --blue: #0072f5;
+
+    /* colors for contrast */
+    --light: #e6e6e6;
+    --medium: #8f8f8f;
+    --primary: #666666;
+
+    /* custom */
+    --code-header-text: #292929;
+    --code-header: #e6e6e6;
+    --border: #ebebeb;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* black color for text */
+        --black: #ededed;
+
+        /* white color for background */
+        --white: #000000;
+        --dark-white: #1a1a1a;
+
+        /* colors for attention */
+        --blue: #0072f5;
+
+        /* colors for contrast */
+        --light: #292929;
+        --medium: #8f8f8f;
+        --primary: #888888;
+
+        /* custom */
+        --code-header-text: #e6e6e6;
+        --code-header: #292929;
+        --border: #1f1f1f;
+    }
+}
+
+body {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--white);
+}

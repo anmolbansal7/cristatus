@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    color: var(--dark-white);
+    color: var(--code-header-text);
     border: none;
     background-color: transparent;
     cursor: pointer;
