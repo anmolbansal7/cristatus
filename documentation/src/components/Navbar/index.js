@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
 import { RiSettings4Line } from 'react-icons/ri';
-import { isEmpty, prefersDarkMode } from '@cristatus/utils';
+import { isEmpty } from '@cristatus/utils';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
@@ -12,32 +12,14 @@ import Settings from '../Settings';
 
 import styles from './styles.module.css';
 
-function Navbar({ activeTab, setActiveTab }) {
-  const IS_DARK_MODE = prefersDarkMode();
-
+function Navbar({
+  activeTab, themeType, setActiveTab, setThemeType,
+}) {
   const [searchValue, setSearchValue] = useState('');
   const [isRotated, setIsRotated] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
-  const [themeType, setThemeType] = useState('system');
-  const [theme, setTheme] = useState(IS_DARK_MODE ? 'dark' : 'light');
 
   const FILTERED_NAVIGATION_MAPPING = getFilteredNavigation({ NAVIGATION_MAPPING, searchValue });
-
-  useEffect(() => {
-    if (themeType === 'system') {
-      setTheme(IS_DARK_MODE ? 'dark' : 'light');
-    } else {
-      setTheme(themeType);
-    }
-
-    if (theme === 'dark') {
-      // eslint-disable-next-line no-undef
-      document.documentElement.classList.add('dark-theme');
-    } else {
-      // eslint-disable-next-line no-undef
-      document.documentElement.classList.remove('dark-theme');
-    }
-  }, [theme, themeType, IS_DARK_MODE]);
 
   const toggleRotation = () => {
     setIsRotated(!isRotated);

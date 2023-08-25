@@ -1,0 +1,42 @@
+.transition_container {
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2s ease-in-out;
+
+    & h1 {
+        color: transparent;
+        background: linear-gradient(45deg, #f06, #09f, #0c6, #f90);
+        animation: waving 4s infinite;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.visible {
+    opacity: 1;
+}
+
+@keyframes waving {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5%);
+    }
+    50% {
+        transform: translateX(5%);
+    }
+    75% {
+        transform: translateX(-5%);
+    }
+}

@@ -1,4 +1,5 @@
 const GLOBALS = {
+  transition_time: '300',
   images: {
     logo: './logo.png',
   },
