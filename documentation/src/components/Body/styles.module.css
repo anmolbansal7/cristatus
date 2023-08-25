@@ -1,11 +1,20 @@
 .body {
-    padding: 24px 48px;
     margin-left: 22vw;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 48px;
+}
+
+.body_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .body_item {
-    border: 1px solid var(--medium);
-    border-radius: 12px;
+    border: 2px solid var(--border);
+    border-radius: var(--large-border-radius);
     padding: 24px 32px;
-    margin-top: 16px;
+    transition: border var(--transition-duration);
 }

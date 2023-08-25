@@ -5,7 +5,9 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\""
+        "lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\"",
+        "stylelint-fix": "stylelint --fix \"**/*.css\"",
+        "eslint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\""
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [

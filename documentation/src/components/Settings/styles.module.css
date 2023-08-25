@@ -1,0 +1,26 @@
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--small-text);
+    margin: 12px 4px;
+}
+
+.theme_button {
+    color: var(--text);
+    background: var(--light);
+    border: none;
+    border-radius: var(--small-border-radius);
+    padding: 6px 12px;
+    margin-left: 4px;
+    cursor: pointer;
+
+    & svg {
+        display: flex;
+    }
+}
+
+.active_theme_button {
+    color: var(--background);
+    background: var(--medium);
+}
