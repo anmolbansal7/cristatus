@@ -21,13 +21,14 @@
         "build": "pnpm build:esm && pnpm build:cjs",
         "build:esm": "tsc",
         "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-        "start-docs": "pnpm run build && cd documentation && pnpm run start",
-        "install-docs": "chmod +x .husky/pre-commit && cd documentation && pnpm i",
+        "start-docs": "cd documentation && pnpm run start",
+        "install-docs": "cd documentation && rm -rf node_modules && pnpm i",
         "lint-docs": "cd documentation && pnpm run lint-fix",
-        "install-package": "chmod +x .husky/pre-commit && pnpm i",
+        "install-package": "pnpm i",
         "lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
         "test-package": "pnpm run test && pnpm run lint-package",
-        "test": "jest --config jest.config.js"
+        "test": "jest --config jest.config.js",
+        "husky": "chmod +x .husky/pre-commit"
     },
     "peerDependencies": {
         "react": ">=16"
