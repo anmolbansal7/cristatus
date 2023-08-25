@@ -101,3 +101,12 @@
     cursor: pointer;
     background-color: var(--light);
 }
+
+.empty_text {
+    text-align: center;
+    margin: 64px 24px;
+}
+
+.anchor {
+    color: var(--blue);
+}

@@ -2,6 +2,7 @@ import { Element } from 'react-scroll';
 
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
 import EmptyState from '../common/EmptyState';
+import TOP_NAVIGATION from '../../configurations/TOP_NAVIGATION';
 
 import styles from './styles.module.css';
 
@@ -9,7 +10,20 @@ function Body() {
   return (
     <div className={styles.body}>
 
-      {NAVIGATION_MAPPING.map((section) => (
+      {(TOP_NAVIGATION || []).map((top) => {
+        const Component = top.component || EmptyState;
+        return (
+          <Element
+            key={top.key}
+            name={top.key}
+            className={styles.body_item}
+          >
+            <Component />
+          </Element>
+        );
+      })}
+
+      {(NAVIGATION_MAPPING || []).map((section) => (
 
         <div key={section.type}>
           {section.items.map((item) => {

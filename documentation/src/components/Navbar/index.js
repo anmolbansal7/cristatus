@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
+import { isEmpty } from '@cristatus/utils';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
 import GLOBALS from '../../globals/globals';
+import TOP_NAVIGATION from '../../configurations/TOP_NAVIGATION';
 
 import styles from './styles.module.css';
 
@@ -42,6 +44,38 @@ function Navbar({ activeTab, setActiveTab }) {
       </div>
 
       <div className={styles.navbar_items}>
+
+        {(TOP_NAVIGATION || []).map((top) => (
+          <Link
+            key={top.key}
+            to={top.key}
+            spy
+            smooth
+            offset={-100}
+            duration={500}
+            onSetActive={() => setActiveTab(top.key)}
+          >
+            <div className={activeTab === top.key ? styles.active : styles.item}>
+              {' '}
+              {top.label}
+            </div>
+          </Link>
+        ))}
+
+        {isEmpty(FILTERED_NAVIGATION_MAPPING) ? (
+          <div className={styles.empty_text}>
+            No search results found.
+            <br />
+            <br />
+            Contact us on our
+            {' '}
+            <a className={styles.anchor} href={GLOBALS.links.github} target="_blank" rel="noreferrer">
+              Github
+            </a>
+            {' '}
+            to get the required component added in no time.
+          </div>
+        ) : null}
 
         {(FILTERED_NAVIGATION_MAPPING || []).map((section) => (
           <div key={section.type}>
