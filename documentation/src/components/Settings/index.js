@@ -3,9 +3,9 @@ import { IoSunnyOutline, IoMoonOutline, IoDesktopOutline } from 'react-icons/io5
 import styles from './styles.module.css';
 
 const THEMES = [
-  { type: 'light', icon: <IoSunnyOutline size={16} /> },
-  { type: 'system', icon: <IoDesktopOutline size={16} /> },
-  { type: 'dark', icon: <IoMoonOutline size={16} /> },
+  { type: 'light', icon: <IoSunnyOutline size={16} />, title: 'Light Mode' },
+  { type: 'system', icon: <IoDesktopOutline size={16} />, title: 'Same as System' },
+  { type: 'dark', icon: <IoMoonOutline size={16} />, title: 'Dark Mode' },
 ];
 
 function Settings({
@@ -25,6 +25,7 @@ function Settings({
             key={item.type}
             type="button"
             value={item.type}
+            title={item.title}
             className={`${styles.theme_button} ${themeType === item.type ? styles.active_theme_button : ''}`}
             onClick={handleThemeType}
           >
