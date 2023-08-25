@@ -37,7 +37,7 @@ function Navbar({ activeTab, setActiveTab }) {
       // eslint-disable-next-line no-undef
       document.documentElement.classList.remove('dark-theme');
     }
-  }, [theme, themeType]);
+  }, [theme, themeType, IS_DARK_MODE]);
 
   const toggleRotation = () => {
     setIsRotated(!isRotated);
