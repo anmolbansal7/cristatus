@@ -7,12 +7,12 @@
 }
 
 .theme_button {
-    border: none;
     color: var(--text);
     background: var(--light);
+    border: none;
+    border-radius: var(--small-border-radius);
     padding: 6px 12px;
     margin-left: 4px;
-    border-radius: var(--small-border-radius);
     cursor: pointer;
 
     & svg {
@@ -21,6 +21,6 @@
 }
 
 .active_theme_button {
-    background: var(--medium);
     color: var(--background);
+    background: var(--medium);
 }
