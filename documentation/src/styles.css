@@ -68,6 +68,9 @@ body {
     line-height: 1.5;
     color: var(--text);
     background-color: var(--background);
+}
+
+.main_container {
     margin: 4vh 2vw 2vh 2vw;
 }
 
