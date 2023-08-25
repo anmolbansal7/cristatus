@@ -3,8 +3,9 @@ const GLOBALS = {
     logo: './logo.png',
   },
   links: {
+    home: '#',
     github: 'https://github.com/anmolbansal7/cristatus',
-    npm: '',
+    npm: '#',
   },
 };
 

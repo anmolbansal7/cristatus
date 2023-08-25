@@ -1,9 +1,10 @@
 .code_viewer {
-    border-radius: 8px;
+    border-radius: var(--medium-border-radius);
     margin: 16px 0px;
     overflow: hidden;
 
     & pre {
+        padding: 8px 12px !important;
         & code,
         & span {
             font-family: "Courier New", Courier, monospace !important;
@@ -22,4 +23,8 @@
     color: var(--code-header-text);
     padding: 8px 12px;
     background-color: var(--code-header);
+
+    & p {
+        padding: 0;
+    }
 }

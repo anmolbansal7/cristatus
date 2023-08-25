@@ -9,11 +9,11 @@
 
 :root {
     /* black color for text */
-    --black: #171717;
+    --text: #171717;
 
     /* white color for background */
-    --white: #ffffff;
-    --dark-white: #f2f2f2;
+    --background: #ffffff;
+    --secondary-background: #f2f2f2;
 
     /* colors for attention */
     --blue: #0072f5;
@@ -21,22 +21,28 @@
     /* colors for contrast */
     --light: #e6e6e6;
     --medium: #8f8f8f;
-    --primary: #666666;
+    --dark: #666666;
 
     /* custom */
     --code-header-text: #292929;
     --code-header: #e6e6e6;
     --border: #ebebeb;
+
+    /* None Changing CSS */
+    --small-border-radius: 4px;
+    --medium-border-radius: 8px;
+    --large-border-radius: 12px;
+    --extra-large-border-radius: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         /* black color for text */
-        --black: #ededed;
+        --text: #ededed;
 
         /* white color for background */
-        --white: #000000;
-        --dark-white: #1a1a1a;
+        --background: #000000;
+        --secondary-background: #1a1a1a;
 
         /* colors for attention */
         --blue: #0072f5;
@@ -44,7 +50,7 @@
         /* colors for contrast */
         --light: #292929;
         --medium: #8f8f8f;
-        --primary: #888888;
+        --dark: #888888;
 
         /* custom */
         --code-header-text: #e6e6e6;
@@ -57,6 +63,15 @@ body {
     display: flex;
     font-size: 14px;
     font-weight: 400;
-    color: var(--black);
-    background-color: var(--white);
+    line-height: 1.5;
+    color: var(--text);
+    background-color: var(--background);
+    margin: 4vh 2vw 2vh 2vw;
+}
+p {
+    line-height: 2;
+}
+
+li {
+    line-height: 1.75;
 }

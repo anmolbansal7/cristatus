@@ -24,8 +24,7 @@ function Body() {
       })}
 
       {(NAVIGATION_MAPPING || []).map((section) => (
-
-        <div key={section.type}>
+        <div className={styles.body_gap} key={section.type}>
           {section.items.map((item) => {
             const Component = item.component || EmptyState;
 

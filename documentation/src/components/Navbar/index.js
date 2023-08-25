@@ -20,10 +20,10 @@ function Navbar({ activeTab, setActiveTab }) {
       <div className={styles.navbar_top}>
 
         <div className={styles.header}>
-          <div className={styles.logo}>
+          <a href={GLOBALS.links.home} className={styles.logo}>
             <img src={GLOBALS.images.logo} alt="logo" />
             cristatus
-          </div>
+          </a>
 
           <div className={styles.links}>
             <a className={styles.anchor_icon} href={GLOBALS.links.github} target="_blank" rel="noreferrer">
