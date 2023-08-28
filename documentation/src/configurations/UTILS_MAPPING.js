@@ -5,7 +5,7 @@ const UTILS_MAPPING = [
   {
     key: 'isEmpty',
     label: 'isEmpty',
-    description: 'is Empty Description is here for testing something something',
+    description: 'Returns a Boolean value if the given variable is empty. Checks strings, arrays, objects.',
     code: isEmptyCode,
     component: UtilsUi,
   },

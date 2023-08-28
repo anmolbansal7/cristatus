@@ -1,4 +1,4 @@
-import isEmpty from '../src/utils/isEmpty';
+import isEmpty from '../../src/utils/isEmpty';
 
 describe('isEmpty utility', () => {
   it('returns true for an empty object', () => {

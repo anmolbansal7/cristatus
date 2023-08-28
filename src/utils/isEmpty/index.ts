@@ -1,3 +1,8 @@
+/* 
+  Name: isEmpty
+  Description: Returns a Boolean value if the given variable is empty. Checks strings, arrays, objects.
+*/
+
 const isEmpty = (value: unknown) => {
   if (value === null || value === undefined) {
     return true;
