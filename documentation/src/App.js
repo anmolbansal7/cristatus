@@ -30,7 +30,7 @@ function App() {
       // eslint-disable-next-line no-undef
       document.documentElement.classList.remove('dark-theme');
     }
-  }, [theme, themeType]);
+  }, [theme, themeType, IS_DARK_MODE]);
 
   useEffect(() => {
     setTimeout(() => setShowTransition(false), GLOBALS.transition_time);
