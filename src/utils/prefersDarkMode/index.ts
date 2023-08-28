@@ -1,3 +1,8 @@
+/* 
+  Name: prefersDarkMode
+  Description: Returns a Boolean value based on the system preference of theme. If Dark Mode is preferred it returns TRUE
+*/
+
 import { useState, useEffect } from 'react';
 
 function prefersDarkMode(): boolean {
