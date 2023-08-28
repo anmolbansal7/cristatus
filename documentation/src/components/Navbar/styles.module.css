@@ -53,19 +53,6 @@
     margin-left: 8px;
     cursor: pointer;
 }
-.search {
-    width: 100%;
-    color: var(--text);
-    border: 1px solid var(--light);
-    border-radius: var(--small-border-radius);
-    box-shadow: inset 0px 0px 2px 0px var(--light);
-    padding: 8px;
-    background-color: var(--light);
-    outline: none;
-}
-::placeholder {
-    color: var(--medium);
-}
 
 .navbar_items {
     display: flex;

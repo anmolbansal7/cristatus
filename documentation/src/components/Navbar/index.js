@@ -8,8 +8,9 @@ import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';
 import GLOBALS from '../../globals/globals';
 import TOP_NAVIGATION from '../../configurations/TOP_NAVIGATION';
-import Settings from '../Settings';
 
+import Settings from './Settings';
+import SearchBar from './SearchBar';
 import styles from './styles.module.css';
 
 function Navbar({
@@ -56,12 +57,7 @@ function Navbar({
           />
         ) : null}
 
-        <input
-          className={styles.search}
-          type="search"
-          placeholder="Search..."
-          onChange={(e) => { setSearchValue(e.target.value); }}
-        />
+        <SearchBar setSearchValue={setSearchValue} />
       </div>
 
       <div className={styles.navbar_items}>
@@ -88,7 +84,7 @@ function Navbar({
             No search results found.
             <br />
             <br />
-            Contact us on our
+            Create an issue on our
             {' '}
             <a className={styles.anchor} href={GLOBALS.links.github} target="_blank" rel="noreferrer">
               Github
