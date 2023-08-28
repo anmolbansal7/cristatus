@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* black color for text */
+    --text: #171717;
+
+    /* white color for background */
+    --background: #ffffff;
+    --secondary-background: #f2f2f2;
+
+    /* colors for attention */
+    --blue: #0072f5;
+
+    /* colors for contrast */
+    --light: #e6e6e6;
+    --medium: #8f8f8f;
+    --dark: #666666;
+
+    /* custom */
+    --code-header-text: #292929;
+    --code-header: #e6e6e6;
+    --border: #ebebeb;
+
+    /* None Changing CSS */
+    --small-text: 12px;
+    --medium-text: 14px;
+    --large-text: 16px;
+    --small-border-radius: 4px;
+    --medium-border-radius: 8px;
+    --large-border-radius: 12px;
+    --extra-large-border-radius: 24px;
+    --transition-duration: 0.3s;
+}
+
+.dark-theme {
+    /* black color for text */
+    --text: #ededed;
+
+    /* white color for background */
+    --background: #000000;
+    --secondary-background: #1a1a1a;
+
+    /* colors for attention */
+    --blue: #0072f5;
+
+    /* colors for contrast */
+    --light: #292929;
+    --medium: #8f8f8f;
+    --dark: #888888;
+
+    /* custom */
+    --code-header-text: #e6e6e6;
+    --code-header: #292929;
+    --border: #1f1f1f;
+}
+
+body {
+    display: flex;
+    font-size: var(--medium-text);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.main_container {
+    margin: 4vh 2vw 2vh 2vw;
+}
+
+body,
+button,
+input {
+    transition: background-color var(--transition-duration),
+        border var(--transition-duration);
+}
+
+p {
+    line-height: 2;
+}
+
+li {
+    line-height: 1.75;
+}

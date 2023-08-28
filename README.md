@@ -23,7 +23,7 @@ Status - Todo, In Progress, Testing, Done, Published
 | isEmpty | To check if string, object, array, null, undefined is empty. | @anmolbansal7 | Todo
 | startCase | Converts string to Start Case | @ | Todo
 | camelCase | Converts string to camelCase | @ | Todo |
-| cloneDeep | Creates a clone of an object | @ | Todo |
+| deepClone | Creates a deep clone of an object | @Amaan85277 | Todo |
 | isNumber | Check if value is a number | @ | Todo |
 | kebabCase | Converts string to kebab_case | @ | Todo |
 | omit | Omits certain properties from an object | @ | Todo |
