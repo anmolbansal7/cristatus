@@ -2,8 +2,10 @@
     position: absolute;
     z-index: 50;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10vh;
     width: 100vw;
     height: 100vh;
     background: var(--background);
@@ -12,13 +14,14 @@
     pointer-events: none;
     transition: opacity 2s ease-in-out;
 
-    & h1 {
-        color: transparent;
-        background: linear-gradient(45deg, #f06, #09f, #0c6, #f90);
-        animation: waving 4s infinite;
-        -webkit-background-clip: text;
-        background-clip: text;
+    & img {
+        width: 132px;
+        height: auto;
     }
+}
+
+.animation {
+    animation: waving 4s infinite;
 }
 
 .visible {

@@ -34,9 +34,9 @@
     color: var(--text);
 
     & img {
-        width: 32px;
+        width: 36px;
         height: auto;
-        margin-right: 8px;
+        margin-right: 4px;
     }
 }
 
