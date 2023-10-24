@@ -1,5 +1,5 @@
 // isFunction.test.ts
-import isFunction from "./isFunction";
+import isFunction from "../../src/utils/isFunction";
 
 test("isFunction returns true for functions", () => {
   expect(isFunction(() => {})).toBe(true);

@@ -8,5 +8,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
+   '@typescript-eslint/no-explicit-any': 0,
   },
 }

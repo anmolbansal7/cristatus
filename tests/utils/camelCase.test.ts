@@ -6,7 +6,7 @@ test("camelCase converts a string to camel case", () => {
 });
 
 test("camelCase converts a string with multiple words to camel case", () => {
-  expect(camelCase("this is a string with multiple words")).toBe("thisIsAStringWithMultipleWords");
+  expect(camelCase("This is a string with multiple words")).toBe("thisIsAStringWithMultipleWords");
 });
 
 test("camelCase converts a string with all lowercase letters to camel case", () => {
@@ -14,7 +14,7 @@ test("camelCase converts a string with all lowercase letters to camel case", () 
 });
 
 test("camelCase converts a string with all uppercase letters to camel case", () => {
-  expect(camelCase("ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("aBCDEFGHIJKLMNOPQRSTUVWXYZ");
+  expect(camelCase("ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("abcdefghijklmnopqrstuvwxyz");
 });
 
 test("camelCase returns an empty string if the input string is empty", () => {

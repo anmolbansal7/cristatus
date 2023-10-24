@@ -1,5 +1,5 @@
 // isEqual.test.ts
-import isEqual from "./isEqual";
+import isEqual from "../../src/utils/isEqual";
 
 test("isEqual returns true for equal values", () => {
   expect(isEqual(1, 1)).toBe(true);

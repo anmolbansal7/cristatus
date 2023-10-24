@@ -1,5 +1,5 @@
 // isObject.test.ts
-import isObject from "./isObject";
+import isObject from "../../src/utils/isObject";
 
 test("isObject returns true for objects", () => {
   expect(isObject({})).toBe(true);

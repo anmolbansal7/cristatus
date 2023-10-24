@@ -1,5 +1,5 @@
 // isRegex.test.ts
-import isRegex from "./isRegex";
+import isRegex from "../../src/utils/isRegex";
 
 test("isRegex returns true for regular expressions", () => {
   expect(isRegex(/hello/)).toBe(true);

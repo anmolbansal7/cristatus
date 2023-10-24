@@ -1,6 +1,6 @@
 
 // isString.test.ts
-import isString from "./isString";
+import isString from "../../src/utils/isString";
 
 test("isString returns true for strings", () => {
   expect(isString("")).toBe(true);
