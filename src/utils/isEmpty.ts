@@ -1,21 +1,52 @@
-const isEmpty = (value: unknown) => {
-  if (value === null || value === undefined) {
-    return true;
-  }
+/**
+ * @name isEmpty
+ * @description Checks if a value is empty.
+ * @param value The value to check.
+ * @returns True if the value is empty, false otherwise.
+ *
+ * The following values are considered empty:
+ *
+ * * null
+ * * undefined
+ * * NaN
+ * * Empty strings
+ * * Empty arrays
+ * * Empty objects
+ * * Empty maps
+ * * Empty sets
+ *
+ * @example
+ *
+ * // Check if a string is empty.
+ * const isEmptyString = isEmpty(""); // true
+ *
+ * // Check if an array is empty.
+ * const isEmptyArray = isEmpty([]); // true
+ *
+ * // Check if an object is empty.
+ * const isEmptyObject = isEmpty({}); // true
+ */
 
-  if (typeof value === "string" && value.trim() === "") {
-    return true;
-  }
+import { toRawType } from "./index";
 
-  if (Array.isArray(value) && value.length === 0) {
-    return true;
-  }
+function isEmpty(value: unknown): boolean {
+  const type = toRawType(value);
 
-  if (typeof value === "object" && Object.keys(value).length === 0) {
+  if (type === "null" || type === "undefined") {
     return true;
+  } else if (type === "number" && Number.isNaN(value as number)) {
+    return true;
+  } else if (type === "string" || type === "array") {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (value as string | any[])?.length === 0;
+  } else if (type === "object") {
+    const objValue = value as Record<string, unknown>;
+    return !Object.keys(objValue).length;
+  } else if (type === "map" || type === "set") {
+    return (value as Map<unknown, unknown> | Set<unknown>)?.size === 0;
+  } else {
+    return false;
   }
-
-  return false;
-};
+}
 
 export default isEmpty;

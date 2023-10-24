@@ -1,67 +1,66 @@
 {
-    "name": "cristatus",
-    "version": "0.1.0",
-    "description": "NPM Package for Everything React",
-    "main": "./dist/cjs/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "./dist/esm/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/anmolbansal7/cristatus.git"
-    },
-    "exports": {
-        ".": {
-            "import": "./dist/esm/index.js",
-            "require": "./dist/cjs/index.js"
-        },
-        "./utils": "./dist/esm/utils/index.js",
-        "./components": "./dist/esm/components/index.js"
-    },
-    "scripts": {
-        "build": "pnpm build:esm && pnpm build:cjs",
-        "build:esm": "tsc",
-        "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-        "start-docs": "cd documentation && pnpm run start",
-        "install-docs": "cd documentation && rm -rf node_modules && pnpm i",
-        "lint-docs": "cd documentation && pnpm run lint-fix",
-        "install-package": "pnpm i",
-        "lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-        "test-package": "pnpm run test && pnpm run lint-package",
-        "test": "jest --config jest.config.js",
-        "husky": "chmod +x .husky/pre-commit"
-    },
-    "peerDependencies": {
-        "react": ">=16"
-    },
-    "files": [
-        "dist",
-        "LICENSE",
-        "README.md"
-    ],
-    "keywords": [
-        "react",
-        "typescript",
-        "awesome-project"
-    ],
-    "author": "anmolbansal7",
-    "license": "MIT",
-    "devDependencies": {
-        "@testing-library/react": "^14.0.0",
-        "@types/jest": "^29.5.4",
-        "@types/react": "^18.2.21",
-        "@typescript-eslint/eslint-plugin": "^6.4.1",
-        "@typescript-eslint/parser": "^6.4.1",
-        "eslint": "^8.47.0",
-        "husky": "^8.0.3",
-        "jest": "^29.6.3",
-        "jest-canvas-mock": "^2.5.2",
-        "jest-environment-jsdom": "^29.6.3",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "stylelint": "^15.10.3",
-        "stylelint-config-recommended": "^13.0.0",
-        "ts-jest": "^29.1.1",
-        "tslib": "^2.6.2",
-        "typescript": "^5.1.6"
-    }
+	"name": "cristatus",
+	"version": "1.0.0",
+	"description": "NPM Package for Everything React",
+	"main": "./dist/cjs/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/esm/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anmolbansal7/cristatus.git"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.js",
+			"require": "./dist/cjs/index.js"
+		},
+		"./utils": "./dist/esm/utils/index.js"
+	},
+	"scripts": {
+		"build": "pnpm build:esm && pnpm build:cjs",
+		"build:esm": "tsc",
+		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
+		"start-docs": "cd documentation && pnpm run start",
+		"install-docs": "npx husky install && cd documentation && rm -rf node_modules && pnpm i",
+		"lint-docs": "cd documentation && pnpm run lint-fix",
+		"install-package": "pnpm i && npx husky install",
+		"lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+		"test-package": "pnpm run test && pnpm run lint-package",
+		"test": "jest --config jest.config.js",
+		"husky": "chmod +x .husky/pre-commit"
+	},
+	"peerDependencies": {
+		"react": ">=16"
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"keywords": [
+		"react",
+		"typescript",
+		"awesome-project"
+	],
+	"author": "anmolbansal7",
+	"license": "MIT",
+	"devDependencies": {
+		"@testing-library/react": "^14.0.0",
+		"@types/jest": "^29.5.4",
+		"@types/react": "^18.2.21",
+		"@typescript-eslint/eslint-plugin": "^6.4.1",
+		"@typescript-eslint/parser": "^6.4.1",
+		"eslint": "^8.47.0",
+		"husky": "^8.0.3",
+		"jest": "^29.6.3",
+		"jest-canvas-mock": "^2.5.2",
+		"jest-environment-jsdom": "^29.6.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"stylelint": "^15.10.3",
+		"stylelint-config-recommended": "^13.0.0",
+		"ts-jest": "^29.1.1",
+		"tslib": "^2.6.2",
+		"typescript": "^5.1.6"
+	}
 }
