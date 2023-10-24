@@ -19,13 +19,13 @@ import { isEmpty } from '@cristatus/utils';
 const isArrayEmpty = isEmpty([1, 2, 3]); // false
 `;
 
-const COMPONENTS_CODE = `// Import from Cristatus Components
-import { Button } from '@cristatus/components';
+// const COMPONENTS_CODE = `// Import from Cristatus Components
+// import { Button } from '@cristatus/components';
 
-// Use the Button component
-function App() {
-  return <Button label="Click me" onClick={() => console.log('Button clicked')} />;
-}`;
+// // Use the Button component
+// function App() {
+//   return <Button label="Click me" onClick={() => console.log('Button clicked')} />;
+// }`;
 
 function GetStarted() {
   return (
@@ -43,12 +43,12 @@ function GetStarted() {
           simplify working with arrays, objects, strings, numbers and dates.
           {' '}
         </strong>
-        In addition, we offer a range of
+        {/* In addition, we offer a range of
         <strong>
           {' '}
           UI components that can enhance your web applications.
           {' '}
-        </strong>
+        </strong> */}
 
         Let&apos;s get started with using Cristatus in your projects.
       </p>
@@ -75,17 +75,16 @@ function GetStarted() {
 
       <CodeSnippet code={UTILS_CODE} showHeader={false} language="javascript" />
 
-      <p>If you&apos;re interested in UI components, you can import and use them like this:</p>
+      {/* <p>If you&apos;re interested in UI components, you can import and use them like this:</p>
 
-      <CodeSnippet code={COMPONENTS_CODE} showHeader={false} language="javascript" />
+      <CodeSnippet code={COMPONENTS_CODE} showHeader={false} language="javascript" /> */}
 
-      <h2>API Documentation</h2>
+      <h2>Github Repository</h2>
 
       <p>
-        For detailed information about all available functions,
-        methods, and components, refer to our
+        For detailed information and contributing refer to our
         {' '}
-        <a className={styles.anchor} href="https://github.com/anmolbansal7/cristatus">API Documentation</a>
+        <a className={styles.anchor} href="https://github.com/anmolbansal7/cristatus">Github</a>
         .
       </p>
 
@@ -152,7 +151,7 @@ function GetStarted() {
 
       <h2>Version and Updates</h2>
 
-      <p>The current version of Cristatus is 1.0.0.</p>
+      <p>The current stable version of Cristatus is v1.0.0</p>
 
     </div>
   );

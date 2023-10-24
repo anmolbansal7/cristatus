@@ -1,4 +1,3 @@
-// startCase.ts
 /**
  * @name startCase
  * @description Converts a string to start case.
@@ -8,11 +7,10 @@
  * Start case is a style of capitalization in which the first letter of each word in a string is capitalized.
  *
  * @example
- *
- * // Convert a string to start case.
  * const startCaseString = startCase("hello_world"); //Hello World
  *
  */
+
 function startCase(string: string): string {
   let t = "";
   if (!string) return t;

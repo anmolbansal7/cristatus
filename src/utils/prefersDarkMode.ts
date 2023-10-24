@@ -7,7 +7,6 @@
  *
  * The function also registers a listener for the `change` event on the `window.matchMedia()` object. This allows the function to update the value of the `prefersDarkMode` state variable whenever the user's device's preferred color scheme changes.
  * @example
- *
  * // Get the user's preferred color scheme.
  * const prefersDarkMode = prefersDarkMode();
  *
