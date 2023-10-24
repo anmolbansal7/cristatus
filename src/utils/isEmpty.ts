@@ -16,7 +16,6 @@
  * * Empty sets
  *
  * @example
- *
  * // Check if a string is empty.
  * const isEmptyString = isEmpty(""); // true
  *

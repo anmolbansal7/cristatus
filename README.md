@@ -56,6 +56,21 @@ Please adhere to this project's `code of conduct`.
 
 | Name | Description | Contributor | Status |
 | ---- | ----------- | ----------- | ------ |
-| isEmpty | Checks if a value is empty. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
-| toRawType | Returns the raw type of a value. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| camelCase | Converts a string to camel case. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isArray | Checks if the given value is an array. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isBoolean | Checks if the given value is a boolean. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isBrowser | Checks if the current environment is a browser. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isDate | Checks if the given value is a date. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isDateObject | Checks if the given value is a Date object. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isEmpty | Checks if a value is empty. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isEqual | Checks if two values are equal. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isFunction | Checks if the given value is a function. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isNumber | Checks if the given value is a number. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isObject | Checks if the given value is an object. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isRegex | Checks if the given value is a regular expression. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isString | Checks if the given value is a string. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| kebabCase | Converts a string to kebab case. |  [@anmolbansal7](https://github.com/anmolbansal7) | 1 test case fail |
+| prefersDarkMode | Returns a boolean value indicating whether the user's device prefers dark mode. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| snakeCase | Converts a string to snake case. |  [@anmolbansal7](https://github.com/anmolbansal7) | 1 test case fail |
 | startCase | Converts string to Start Case. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| toRawType | Returns the raw type of a value. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
