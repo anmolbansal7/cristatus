@@ -1,9 +1,13 @@
 const isEmptyCode = `import { isEmpty } from '@cristatus/utils';
 
-const testVar = [1, 2, 3];
+// Check if a string is empty.
+const isEmptyString = isEmpty(""); // true
 
-const isVarEmpty = isEmpty(testVar); // True if testVar is empty otherwise False
+// Check if an array is empty.
+const isEmptyArray = isEmpty([]); // true
 
-console.log('isVarEmpty:: ', isVarEmpty);`;
+// Check if an object is empty.
+const isEmptyObject = isEmpty({}); // true
+`;
 
 export default isEmptyCode;
