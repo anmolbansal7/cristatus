@@ -1,9 +1,36 @@
 # Cristatus
 
+This JavaScript library, built on top of TypeScript, is designed to simplify working with arrays, objects, strings, numbers and dates. Let's get started with using Cristatus in your projects.
+
+### Installation
+To start using Cristatus, install the main library package:
+
+```
+# Using npm 
+npm install @cristatus/utils
+
+# Using yarn
+yarn add @cristatus/utils
+
+# Using pnpm
+pnpm install @cristatus/utils
+```
+### Importing and Usage
+Once installed, you can import Cristatus utilities into your project. Here are some examples of how to use them:
+
+```
+// Import Cristatus Utilities
+import { isEmpty } from '@cristatus/utils';
+
+// Use isEmpty function
+const isArrayEmpty = isEmpty([1, 2, 3]); // false
+```
+
+#### For detailed information about all available utility functions, refer to our Documentation.
 
 ### Steps to Run
 
-- clone the repo
+- Clone the Repository
 - ```pnpm run install-package``` (to install npm package deps)
 - ```pnpm run lint-package``` (for eslint and stylelint in package)
 - ```pnpm run test-package``` (for tests, eslint and stylelint in package)
@@ -12,57 +39,17 @@
 - ```pnpm run install-docs``` (to install deps for documentation website)
 - ```pnpm run start-docs``` (to start localhost:3000 for documentation website)
 
-### Utils
+### Open Source Community and Support
+Here, you can actively participate by opening issues to discuss various topics, asking questions to seek help, and sharing your valuable experiences.
 
-Status - Todo, In Progress, Testing, Done, Published
+We encourage you to make a positive impact by contributing to this repository through Pull Requests (PRs). Your PRs can include bug fixes, new features, or enhancements that align with the project's goals. Together, we can collaborate to improve and innovate.
 
-##### Remember to change names of things we can 
+Join us in shaping the future of this project by engaging in meaningful discussions, raising issues, and submitting PRs. Your involvement makes all the difference!
+
+### List of all the Utils
 
 | Name | Description | Contributor | Status |
 | ---- | ----------- | ----------- | ------ |
-| isEmpty | To check if string, object, array, null, undefined is empty. | @anmolbansal7 | Todo
-| startCase | Converts string to Start Case | @ | Todo
-| camelCase | Converts string to camelCase | @ | Todo |
-| deepClone | Creates a deep clone of an object | @Amaan85277 | Todo |
-| isNumber | Check if value is a number | @ | Todo |
-| kebabCase | Converts string to kebab_case | @ | Todo |
-| omit | Omits certain properties from an object | @ | Todo |
-| pascalCase | Converts string to pascalCase | @ | Todo |
-| pick | Picks selective properties in an object | @ | Todo |
-| snakeCase | Converts string to snake_case | @ | Todo |
-| sortBy | Sorts Collection by Given Iteratees | @ | Todo |
-| toWords | Converts Number into words | @ | Todo |
-| unique | Create a duplicate-free array | @ | Todo |
-| uniqueBy | Creates a duplicate free array with custom function | @ | Todo |
-| copyToClipboard | Copies the text to the clipboard from the target element or the value | @ | Todo |
-| addDays | Add the specified number of days to the given date. | @ | Todo |
-| addHours | Add the specified number of hours to the given date | @ | Todo |
-| addMinutes | Add the specified number of minutes to the given date | @ | Todo |
-| differenceInDays | Get the number of full days between the given dates. | @ | Todo | Can we create function here which can give difference in Days, years, Months, etc.
-| endOfMonth | Gets the end of a month for the given date | @ | Todo |
-| endOfWeek | Gets the end of a week for the given date | @ | Todo |
-| format | Formats the given date according to a mask string | @ | Todo |
-| getDate | Get the day of the month of the given date. | @ | Todo |
-| getMonth | Get the month of the given date. | @ | Todo |
-| getYear | Get the year of the given date | @ | Todo |
-| isSameDay | Are the given dates in the same day? | @ | Todo |
-| isValidDate | Is the given date valid? | @ | Todo |
-| isYesterday | Is the given date yesterday? | @ | Todo |
-| startOfMonth | Return the start of a month for the given date. | @ | Todo |
-| startOfWeek | Return the start of a week for the given date. | @ | Todo |
-| subtractDays | Subtract the specified number of days from the given date. | @ | Todo |
-|  | Remove Spaces from a String and replace with something | @ | Todo |
-| debounceQuery | Sets a delay on searchbar, specifically to reduce unwanted computation. | @ | Todo |
-| - | - | @ | Todo |
-| - | - | @ | Todo |
-
-
-To Explore more:
-- getByKey
-- debounce
-- merge
-- throttle
-- toRawType (Diff bet typeOf and this)
-- compareAsc in Dates
-
-
+| isEmpty | Checks if a value is empty. | @anmolbansal7 | Stable |
+| toRawType | Returns the raw type of a value. | @anmolbansal7 | Stable |
+| startCase | Converts string to Start Case. | @anmolbansal7 | Stable |
