@@ -1,7 +1,7 @@
 const GLOBALS = {
-  transition_time: '300',
+  transition_time: '500',
   images: {
-    logo: './logo.png',
+    logo: './assets/logo.png',
   },
   links: {
     home: '#',

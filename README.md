@@ -34,7 +34,6 @@ Status - Todo, In Progress, Testing, Done, Published
 | toWords | Converts Number into words | @ | Todo |
 | unique | Create a duplicate-free array | @ | Todo |
 | uniqueBy | Creates a duplicate free array with custom function | @ | Todo |
-| upperCase | Converts string to uppercase | @ | Todo |
 | copyToClipboard | Copies the text to the clipboard from the target element or the value | @ | Todo |
 | addDays | Add the specified number of days to the given date. | @ | Todo |
 | addHours | Add the specified number of hours to the given date | @ | Todo |
