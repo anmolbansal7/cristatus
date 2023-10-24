@@ -27,7 +27,7 @@
  * const isEmptyObject = isEmpty({}); // true
  */
 
-import toRawType from "./toRawType";
+import { toRawType } from "./index";
 
 function isEmpty(value: unknown): boolean {
   const type = toRawType(value);

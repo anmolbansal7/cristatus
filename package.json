@@ -1,6 +1,6 @@
 {
 	"name": "cristatus",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "NPM Package for Everything React",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
@@ -14,8 +14,7 @@
 			"import": "./dist/esm/index.js",
 			"require": "./dist/cjs/index.js"
 		},
-		"./utils": "./dist/esm/utils/index.js",
-		"./components": "./dist/esm/components/index.js"
+		"./utils": "./dist/esm/utils/index.js"
 	},
 	"scripts": {
 		"build": "pnpm build:esm && pnpm build:cjs",
