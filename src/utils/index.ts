@@ -1,3 +1,9 @@
-export { default as isEmpty } from './isEmpty';
+import isEmpty from './isEmpty';
+import toRawType from './toRawType';
+import prefersDarkMode from './prefersDarkMode';
 
-export { default as prefersDarkMode } from './prefersDarkMode';
+export {
+    isEmpty,
+    toRawType,
+    prefersDarkMode,
+};
