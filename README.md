@@ -26,7 +26,7 @@ import { isEmpty } from '@cristatus/utils';
 const isArrayEmpty = isEmpty([1, 2, 3]); // false
 ```
 
-#### For detailed information about all available utility functions, refer to our Documentation.
+#### For detailed information about all available utility functions, refer to our [Documentation](https://cristatus.com/)
 
 ### Steps to Run
 
@@ -42,14 +42,20 @@ const isArrayEmpty = isEmpty([1, 2, 3]); // false
 ### Open Source Community and Support
 Here, you can actively participate by opening issues to discuss various topics, asking questions to seek help, and sharing your valuable experiences.
 
-We encourage you to make a positive impact by contributing to this repository through Pull Requests (PRs). Your PRs can include bug fixes, new features, or enhancements that align with the project's goals. Together, we can collaborate to improve and innovate.
+We encourage you to make a positive impact by **contributing to this repository through Pull Requests (PRs)**. Your PRs can include **bug fixes, new utilities, or enhancements** that align with the project's goals. Together, we can collaborate to improve and innovate.
 
 Join us in shaping the future of this project by engaging in meaningful discussions, raising issues, and submitting PRs. Your involvement makes all the difference!
+
+**Contributions are always welcome!**
+
+**See `contributing.md` for ways to get started.**
+
+Please adhere to this project's `code of conduct`.
 
 ### List of all the Utils
 
 | Name | Description | Contributor | Status |
 | ---- | ----------- | ----------- | ------ |
-| isEmpty | Checks if a value is empty. | @anmolbansal7 | Stable |
-| toRawType | Returns the raw type of a value. | @anmolbansal7 | Stable |
-| startCase | Converts string to Start Case. | @anmolbansal7 | Stable |
+| isEmpty | Checks if a value is empty. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| toRawType | Returns the raw type of a value. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| startCase | Converts string to Start Case. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
