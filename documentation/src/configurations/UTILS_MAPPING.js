@@ -44,7 +44,7 @@ const UTILS_MAPPING = [
   {
     key: 'getKeyByValue',
     label: 'getKeyByValue',
-    description: '',
+    description: 'Gets the key of the given value in an object.',
     code: getKeyByValueCode,
     component: UtilsUi,
   },

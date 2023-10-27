@@ -58,7 +58,7 @@ Please adhere to this project's `code of conduct`.
 | ---- | ----------- | ----------- | ------ |
 | camelCase | Converts a string to camel case. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | delimiter | Replace anything by anything in a string. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
-| getKeyByValue | Get Key from Value in an object. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
+| getKeyByValue | Gets the key of the given value in an object. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isArray | Checks if the given value is an array. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isBoolean | Checks if the given value is a boolean. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isBrowser | Checks if the current environment is a browser. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
