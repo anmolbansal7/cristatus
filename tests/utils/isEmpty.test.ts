@@ -17,6 +17,10 @@ test("isEmpty returns true for empty strings", () => {
   expect(isEmpty("")).toBe(true);
 });
 
+test("isEmpty returns true for empty strings with whitespace", () => {
+  expect(isEmpty("     ")).toBe(true);
+});
+
 test("isEmpty returns true for empty arrays", () => {
   expect(isEmpty([])).toBe(true);
 });

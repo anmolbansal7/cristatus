@@ -1,3 +1,5 @@
+import { isEmpty } from '@cristatus/utils';
+
 import CodeSnippet from '../common/CodeSnippet';
 
 import styles from './styles.module.css';
@@ -7,7 +9,7 @@ function UtilsUi({ label = '', description = '', code = '' }) {
     <>
       <h2 className={styles.label}>{label}</h2>
       <p className={styles.description}>{description}</p>
-      <CodeSnippet code={code} />
+      {!isEmpty(code) ? <CodeSnippet code={code} /> : null}
     </>
 
   );

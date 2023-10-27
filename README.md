@@ -57,6 +57,8 @@ Please adhere to this project's `code of conduct`.
 | Name | Description | Contributor | Status |
 | ---- | ----------- | ----------- | ------ |
 | camelCase | Converts a string to camel case. | [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| delimiter | Replace anything by anything in a string. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
+| getKeyByValue | Get Key from Value in an object. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
 | isArray | Checks if the given value is an array. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isBoolean | Checks if the given value is a boolean. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isBrowser | Checks if the current environment is a browser. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
@@ -64,13 +66,19 @@ Please adhere to this project's `code of conduct`.
 | isDateObject | Checks if the given value is a Date object. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isEmpty | Checks if a value is empty. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isEqual | Checks if two values are equal. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| isFinite | Checks if a value is a finite number. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isFunction | Checks if the given value is a function. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isNumber | Checks if the given value is a number. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isObject | Checks if the given value is an object. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isRegex | Checks if the given value is a regular expression. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | isString | Checks if the given value is a string. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | kebabCase | Converts a string to kebab case. |  [@anmolbansal7](https://github.com/anmolbansal7) | 1 test case fail |
+| numberToWords | Converts Number into words | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
+| omitFromObject | Omit certain properties from an object. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
+| pickFromObject | Pick certain properties from an object. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
 | prefersDarkMode | Returns a boolean value indicating whether the user's device prefers dark mode. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | snakeCase | Converts a string to snake case. |  [@anmolbansal7](https://github.com/anmolbansal7) | 1 test case fail |
+| sortBy | Sorts Collection by given iteratees. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |
 | startCase | Converts string to Start Case. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
 | toRawType | Returns the raw type of a value. |  [@anmolbansal7](https://github.com/anmolbansal7) | Stable |
+| toUnique | Returns a duplicate free array. | [@anmolbansal7](https://github.com/anmolbansal7) | Todo |

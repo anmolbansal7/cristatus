@@ -35,9 +35,10 @@ function isEmpty(value: unknown): boolean {
     return true;
   } else if (type === "number" && Number.isNaN(value as number)) {
     return true;
-  } else if (type === "string" || type === "array") {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return (value as string | any[])?.length === 0;
+  } else if (type === "string") {
+    return (value as string)?.trim()?.length === 0;
+  } else if (type === "array") {
+    return (value as Array<unknown>)?.length === 0;
   } else if (type === "object") {
     const objValue = value as Record<string, unknown>;
     return !Object.keys(objValue).length;

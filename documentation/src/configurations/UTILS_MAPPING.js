@@ -1,5 +1,7 @@
 import UtilsUi from '../components/UtilsUi';
 import camelCaseCode from '../components/UtilsUi/snippets/camelCaseCode';
+import delimiterCode from '../components/UtilsUi/snippets/delimiterCode';
+import getKeyByValueCode from '../components/UtilsUi/snippets/getKeyByValueCode';
 import isArrayCode from '../components/UtilsUi/snippets/isArrayCode';
 import isBooleanCode from '../components/UtilsUi/snippets/isBooleanCode';
 import isBrowserCode from '../components/UtilsUi/snippets/isBrowserCode';
@@ -7,16 +9,22 @@ import isDateCode from '../components/UtilsUi/snippets/isDateCode';
 import isDateObjectCode from '../components/UtilsUi/snippets/isDateObjectCode';
 import isEmptyCode from '../components/UtilsUi/snippets/isEmptyCode';
 import isEqualCode from '../components/UtilsUi/snippets/isEqualCode';
+import isFiniteCode from '../components/UtilsUi/snippets/isFiniteCode';
 import isFunctionCode from '../components/UtilsUi/snippets/isFunctionCode';
 import isNumberCode from '../components/UtilsUi/snippets/isNumberCode';
 import isObjectCode from '../components/UtilsUi/snippets/isObjectCode';
 import isRegexCode from '../components/UtilsUi/snippets/isRegexCode';
 import isStringCode from '../components/UtilsUi/snippets/isStringCode';
 import kebabCaseCode from '../components/UtilsUi/snippets/kebabCaseCode';
+import numberToWordsCode from '../components/UtilsUi/snippets/numberToWordsCode';
+import omitFromObjectCode from '../components/UtilsUi/snippets/omitFromObjectCode';
+import pickFromObjectCode from '../components/UtilsUi/snippets/pickFromObjectCode';
 import prefersDarkModeCode from '../components/UtilsUi/snippets/prefersDarkModeCode';
 import snakeCaseCode from '../components/UtilsUi/snippets/snakeCaseCode';
+import sortByCode from '../components/UtilsUi/snippets/sortByCode';
 import startCaseCode from '../components/UtilsUi/snippets/startCaseCode';
 import toRawTypeCode from '../components/UtilsUi/snippets/toRawTypeCode';
+import toUniqueCode from '../components/UtilsUi/snippets/toUniqueCode';
 
 const UTILS_MAPPING = [
   {
@@ -24,6 +32,20 @@ const UTILS_MAPPING = [
     label: 'camelCase',
     description: 'Converts a string to camel case. Camel case is a style of capitalization in which the first letter of each word in a string is capitalized, except for the first letter of the string, which is lowercase.',
     code: camelCaseCode,
+    component: UtilsUi,
+  },
+  {
+    key: 'delimiter',
+    label: 'delimiter',
+    description: '',
+    code: delimiterCode,
+    component: UtilsUi,
+  },
+  {
+    key: 'getKeyByValue',
+    label: 'getKeyByValue',
+    description: '',
+    code: getKeyByValueCode,
     component: UtilsUi,
   },
   {
@@ -76,6 +98,13 @@ const UTILS_MAPPING = [
     component: UtilsUi,
   },
   {
+    key: 'isFinite',
+    label: 'isFinite',
+    description: 'Checks if a value is a finite number. A number is considered finite if it is not `Infinity`, `-Infinity`, or `NaN`.',
+    code: isFiniteCode,
+    component: UtilsUi,
+  },
+  {
     key: 'isFunction',
     label: 'isFunction',
     description: 'Checks if the given value is a function.',
@@ -118,6 +147,27 @@ const UTILS_MAPPING = [
     component: UtilsUi,
   },
   {
+    key: 'numberToWords',
+    label: 'numberToWords',
+    description: '',
+    code: numberToWordsCode,
+    component: UtilsUi,
+  },
+  {
+    key: 'omitFromObject',
+    label: 'omitFromObject',
+    description: '',
+    code: omitFromObjectCode,
+    component: UtilsUi,
+  },
+  {
+    key: 'pickFromObject',
+    label: 'pickFromObject',
+    description: '',
+    code: pickFromObjectCode,
+    component: UtilsUi,
+  },
+  {
     key: 'prefersDarkMode',
     label: 'prefersDarkMode',
     description: 'Returns a boolean value indicating whether the users device prefers dark mode.',
@@ -132,6 +182,13 @@ const UTILS_MAPPING = [
     component: UtilsUi,
   },
   {
+    key: 'sortBy',
+    label: 'sortBy',
+    description: '',
+    code: sortByCode,
+    component: UtilsUi,
+  },
+  {
     key: 'startCase',
     label: 'startCase',
     description: 'Converts a string to start case. Start case is a style of capitalization in which the first letter of each word in a string is capitalized.',
@@ -143,6 +200,13 @@ const UTILS_MAPPING = [
     label: 'toRawType',
     description: 'Returns the raw type of a value.',
     code: toRawTypeCode,
+    component: UtilsUi,
+  },
+  {
+    key: 'toUnique',
+    label: 'toUnique',
+    description: '',
+    code: toUniqueCode,
     component: UtilsUi,
   },
 ];
