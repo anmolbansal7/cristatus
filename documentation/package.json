@@ -4,8 +4,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"predeploy": "pnpm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "pnpm run build && gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\"",

@@ -94,4 +94,5 @@ module.exports = {
             "@media",
         ],
     },
+    "ignoreFiles": ["**/build/**"]
 };
