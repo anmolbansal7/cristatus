@@ -6,7 +6,7 @@ const GLOBALS = {
   links: {
     home: '#',
     github: 'https://github.com/anmolbansal7/cristatus',
-    npm: '#',
+    npm: 'https://www.npmjs.com/package/cristatus',
   },
 };
 

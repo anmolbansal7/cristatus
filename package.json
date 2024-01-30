@@ -27,6 +27,7 @@
 		"install-package": "pnpm i && npx husky install",
 		"lint-package": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
 		"test-package": "pnpm run test && pnpm run lint-package",
+		"deploy-docs": "cd documentation && rm -rf build && pnpm run deploy",
 		"test": "jest --config jest.config.js",
 		"husky": "chmod +x .husky/pre-commit"
 	},
