@@ -4,8 +4,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"deploy": "pnpm run build && pnpm run add-cname && gh-pages -d build",
-		"add-cname": "echo 'cristatus.anmolbansal.xyz' > build/CNAME",
+		"deploy": "pnpm run build && gh-pages -b docs-deployed -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"lint-fix": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && stylelint --fix \"**/*.css\"",

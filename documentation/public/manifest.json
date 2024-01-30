@@ -1,0 +1,6 @@
+{
+	"short_name": "Cristatus",
+	"name": "Documentation for Cristatus - A React Utility NPM Package",
+	"start_url": ".",
+	"display": "standalone"
+}
