@@ -9,6 +9,7 @@
 		"type": "git",
 		"url": "git+https://github.com/anmolbansal7/cristatus.git"
 	},
+	"homepage": "https://cristatus.anmolbansal.xyz/",
 	"exports": {
 		".": {
 			"import": "./dist/esm/index.js",
