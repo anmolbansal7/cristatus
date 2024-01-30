@@ -1,6 +1,5 @@
 import UtilsUi from '../components/UtilsUi';
 import camelCaseCode from '../components/UtilsUi/snippets/camelCaseCode';
-import delimiterCode from '../components/UtilsUi/snippets/delimiterCode';
 import getKeyByValueCode from '../components/UtilsUi/snippets/getKeyByValueCode';
 import isArrayCode from '../components/UtilsUi/snippets/isArrayCode';
 import isBooleanCode from '../components/UtilsUi/snippets/isBooleanCode';
@@ -21,7 +20,6 @@ import omitFromObjectCode from '../components/UtilsUi/snippets/omitFromObjectCod
 import pickFromObjectCode from '../components/UtilsUi/snippets/pickFromObjectCode';
 import prefersDarkModeCode from '../components/UtilsUi/snippets/prefersDarkModeCode';
 import snakeCaseCode from '../components/UtilsUi/snippets/snakeCaseCode';
-import sortByCode from '../components/UtilsUi/snippets/sortByCode';
 import startCaseCode from '../components/UtilsUi/snippets/startCaseCode';
 import toRawTypeCode from '../components/UtilsUi/snippets/toRawTypeCode';
 import toUniqueCode from '../components/UtilsUi/snippets/toUniqueCode';
@@ -32,13 +30,6 @@ const UTILS_MAPPING = [
     label: 'camelCase',
     description: 'Converts a string to camel case. Camel case is a style of capitalization in which the first letter of each word in a string is capitalized, except for the first letter of the string, which is lowercase.',
     code: camelCaseCode,
-    component: UtilsUi,
-  },
-  {
-    key: 'delimiter',
-    label: 'delimiter',
-    description: '',
-    code: delimiterCode,
     component: UtilsUi,
   },
   {
@@ -182,13 +173,6 @@ const UTILS_MAPPING = [
     component: UtilsUi,
   },
   {
-    key: 'sortBy',
-    label: 'sortBy',
-    description: '',
-    code: sortByCode,
-    component: UtilsUi,
-  },
-  {
     key: 'startCase',
     label: 'startCase',
     description: 'Converts a string to start case. Start case is a style of capitalization in which the first letter of each word in a string is capitalized.',
@@ -205,7 +189,7 @@ const UTILS_MAPPING = [
   {
     key: 'toUnique',
     label: 'toUnique',
-    description: '',
+    description: 'Removes duplicate elements from an array.',
     code: toUniqueCode,
     component: UtilsUi,
   },
