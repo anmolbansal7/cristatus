@@ -3,29 +3,21 @@ import CodeSnippet from '../common/CodeSnippet';
 import styles from './styles.module.css';
 
 const INSTALLATION_CODE = `# Using npm 
-npm install @cristatus
+npm install cristatus
 
 # Using yarn
-yarn add @cristatus
+yarn add cristatus
 
 # Using pnpm
-pnpm install @cristatus
+pnpm install cristatus
 `;
 
-const UTILS_CODE = `// Import Cristatus Utilities
-import { isEmpty } from '@cristatus/utils';
+const UTILS_CODE = `// Import Cristatus
+import { isEmpty } from 'cristatus';
 
 // Use isEmpty function
 const isArrayEmpty = isEmpty([1, 2, 3]); // false
 `;
-
-// const COMPONENTS_CODE = `// Import from Cristatus Components
-// import { Button } from '@cristatus/components';
-
-// // Use the Button component
-// function App() {
-//   return <Button label="Click me" onClick={() => console.log('Button clicked')} />;
-// }`;
 
 function GetStarted() {
   return (
@@ -43,12 +35,6 @@ function GetStarted() {
           simplify working with arrays, objects, strings, numbers and dates.
           {' '}
         </strong>
-        {/* In addition, we offer a range of
-        <strong>
-          {' '}
-          UI components that can enhance your web applications.
-          {' '}
-        </strong> */}
 
         Let&apos;s get started with using Cristatus in your projects.
       </p>
@@ -74,10 +60,6 @@ function GetStarted() {
       </p>
 
       <CodeSnippet code={UTILS_CODE} showHeader={false} language="javascript" />
-
-      {/* <p>If you&apos;re interested in UI components, you can import and use them like this:</p>
-
-      <CodeSnippet code={COMPONENTS_CODE} showHeader={false} language="javascript" /> */}
 
       <h2>Github Repository</h2>
 
@@ -151,7 +133,7 @@ function GetStarted() {
 
       <h2>Version and Updates</h2>
 
-      <p>The current stable version of Cristatus is v1.0.0</p>
+      <p>The current stable version of Cristatus is v1.0.1</p>
 
     </div>
   );

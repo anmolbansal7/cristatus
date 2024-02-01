@@ -1,4 +1,4 @@
-const isArrayCode = `import { isArray } from '@cristatus/utils';
+const isArrayCode = `import { isArray } from 'cristatus';
 
 const isArray = isArray([1, 2, 3]); //true
 `;

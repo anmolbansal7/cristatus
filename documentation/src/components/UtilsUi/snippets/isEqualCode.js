@@ -1,4 +1,4 @@
-const isEqualCode = `import { isEqual } from '@cristatus/utils';
+const isEqualCode = `import { isEqual } from 'cristatus';
 
 const isEqual = isEqual(1, 1); //true
 `;

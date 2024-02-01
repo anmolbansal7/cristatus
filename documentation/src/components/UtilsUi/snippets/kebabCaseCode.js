@@ -1,4 +1,4 @@
-const kebabCaseCode = `import { kebabCase } from '@cristatus/utils';
+const kebabCaseCode = `import { kebabCase } from 'cristatus';
 
 const kebabCaseString = kebabCase("helloWorld"); //hello world
 `;

@@ -1,4 +1,4 @@
-const isBooleanCode = `import { isBoolean } from '@cristatus/utils';
+const isBooleanCode = `import { isBoolean } from 'cristatus';
 
 const isBoolean = isBoolean(true); //true
 `;

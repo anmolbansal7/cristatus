@@ -7,26 +7,16 @@ To start using Cristatus, install the main library package:
 
 ```
 # Using npm 
-npm install @cristatus/utils
+npm install cristatus
 
 # Using yarn
-yarn add @cristatus/utils
+yarn add cristatus
 
 # Using pnpm
-pnpm install @cristatus/utils
-```
-### Importing and Usage
-Once installed, you can import Cristatus utilities into your project. Here are some examples of how to use them:
-
-```
-// Import Cristatus Utilities
-import { isEmpty } from '@cristatus/utils';
-
-// Use isEmpty function
-const isArrayEmpty = isEmpty([1, 2, 3]); // false
+pnpm install cristatus
 ```
 
-#### For detailed information about all available utility functions, refer to our [Documentation](https://cristatus.com/)
+#### For detailed information about all available utility functions, refer to our [Documentation](https://cristatus.anmbansal.xyz/)
 
 ### Steps to Run
 

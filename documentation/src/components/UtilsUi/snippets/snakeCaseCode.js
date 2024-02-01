@@ -1,4 +1,4 @@
-const snakeCaseCode = `import { snakeCase } from '@cristatus/utils';
+const snakeCaseCode = `import { snakeCase } from 'cristatus';
 
 const snakeCaseString = snakeCase("helloWorld"); //hello_world
 `;

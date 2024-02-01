@@ -1,4 +1,4 @@
-const isObjectCode = `import { isObject } from '@cristatus/utils';
+const isObjectCode = `import { isObject } from 'cristatus';
 
 const isObject = isObject({}); //true
 `;

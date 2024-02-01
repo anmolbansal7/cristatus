@@ -1,4 +1,4 @@
-import { isEmpty } from '@cristatus/utils';
+import { isEmpty } from 'cristatus';
 
 import CodeHighlighter from '../CodeHighlighter';
 import CopyToClipboard from '../CopyToClipBoard';

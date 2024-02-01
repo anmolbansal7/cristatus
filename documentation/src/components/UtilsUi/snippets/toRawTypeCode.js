@@ -1,4 +1,4 @@
-const toRawTypeCode = `import { toRawType } from '@cristatus/utils';
+const toRawTypeCode = `import { toRawType } from 'cristatus';
 
 // Get the raw type of a string.
 const rawType = toRawType("hello"); // "string"

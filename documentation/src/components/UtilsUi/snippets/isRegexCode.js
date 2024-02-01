@@ -1,4 +1,4 @@
-const isRegexCode = `import { isRegex } from '@cristatus/utils';
+const isRegexCode = `import { isRegex } from 'cristatus';
 
 const isRegex = isRegex(/hello/); //true
 `;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoLogoGithub, IoLogoNpm } from 'react-icons/io5';
 import { RiSettings4Line } from 'react-icons/ri';
-import { isEmpty } from '@cristatus/utils';
+import { isEmpty } from 'cristatus';
 
 import getFilteredNavigation from '../../utils/getFilteredNavigation';
 import NAVIGATION_MAPPING from '../../configurations/NAVIGATION_MAPPING';

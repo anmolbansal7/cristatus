@@ -1,7 +1,7 @@
 {
 	"name": "cristatus",
 	"version": "1.0.1",
-	"description": "NPM Package for Everything React",
+	"description": "React Utilities Made Easy",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
 	"types": "./dist/esm/index.d.ts",
@@ -35,14 +35,18 @@
 		"react": ">=16"
 	},
 	"files": [
+		"src",
 		"dist",
 		"LICENSE",
 		"README.md"
 	],
 	"keywords": [
-		"react",
-		"typescript",
-		"awesome-project"
+		"JavaScript",
+		"npm",
+		"TypeScript",
+		"library",
+		"utils",
+		"utility functions"
 	],
 	"author": "anmolbansal7",
 	"license": "MIT",

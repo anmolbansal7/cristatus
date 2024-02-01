@@ -1,4 +1,4 @@
-const isStringCode = `import { isString } from '@cristatus/utils';
+const isStringCode = `import { isString } from 'cristatus';
 
 const isString = isString("hello"); // true
 `;

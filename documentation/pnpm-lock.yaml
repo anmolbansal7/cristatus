@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cristatus/utils': file:..
+  cristatus: file:..
   eslint: 8.47.0
   eslint-config-airbnb: ^19.0.4
   eslint-plugin-import: ^2.28.1
@@ -23,7 +23,7 @@ specifiers:
   web-vitals: ^2.1.4
 
 dependencies:
-  '@cristatus/utils': file:.._react@18.2.0
+  cristatus: file:.._react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.11.0_react@18.2.0
@@ -10854,7 +10854,7 @@ packages:
     resolution: {directory: .., type: directory}
     id: file:..
     name: cristatus
-    version: 1.0.0
+    version: 1.0.1
     peerDependencies:
       react: '>=16'
     dependencies:

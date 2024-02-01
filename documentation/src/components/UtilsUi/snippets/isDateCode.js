@@ -1,4 +1,4 @@
-const isDateCode = `import { isDate } from '@cristatus/utils';
+const isDateCode = `import { isDate } from 'cristatus';
 
 const isDate = isDate(new Date()); //true
 `;

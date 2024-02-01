@@ -1,4 +1,4 @@
-const isEmptyCode = `import { isEmpty } from '@cristatus/utils';
+const isEmptyCode = `import { isEmpty } from 'cristatus';
 
 // Check if a string is empty.
 const isEmptyString = isEmpty(""); // true

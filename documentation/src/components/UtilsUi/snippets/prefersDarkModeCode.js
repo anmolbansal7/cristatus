@@ -1,4 +1,4 @@
-const prefersDarkModeCode = `import { prefersDarkMode } from '@cristatus/utils';
+const prefersDarkModeCode = `import { prefersDarkMode } from 'cristatus';
 
 // Get the user's preferred color scheme.
 const prefersDarkMode = prefersDarkMode();
