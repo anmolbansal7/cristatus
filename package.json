@@ -1,6 +1,6 @@
 {
 	"name": "cristatus",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "NPM Package for Everything React",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.js",
