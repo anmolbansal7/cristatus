@@ -133,7 +133,7 @@ function GetStarted() {
 
       <h2>Version and Updates</h2>
 
-      <p>The current stable version of Cristatus is v1.0.1</p>
+      <p>The current stable version of Cristatus is v1.0.2</p>
 
     </div>
   );
